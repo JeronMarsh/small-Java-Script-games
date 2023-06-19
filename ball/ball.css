@@ -1,0 +1,85 @@
+body {
+    width: 500px;
+    height: 500px;
+    border: 3px solid red;
+}
+div {
+    position: absolute;
+    height: 100px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    border: 1px solid red;
+    transition: top 1s ease-out;
+    background-color: yellowgreen;
+
+}
+
+.fullsd {
+    top: 400px; 
+    transition: top 1s ease-in;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #535d67;
+    border-radius: 1px solid black;
+    box-shadow: 2px 2px 4px #000;
+    margin-top: 550px;
+
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display:inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+
+
+a:nth-child(1) {
+    width: 110px;
+}
+
+a:nth-child(2) {
+    width: 150px;
+}
+
+a:nth-child(3) {
+    width: 110px;
+}
+
+a:nth-child(4) {
+    width: 208px;
+}
+
+a:hover {
+    background-color: rgb(25, 206, 152);
+}

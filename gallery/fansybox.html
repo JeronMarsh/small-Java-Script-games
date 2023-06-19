@@ -1,0 +1,83 @@
+<html>
+    <head>
+        
+        <meta charset="utf-8"/>
+        <style>
+            div {
+                font-size: 30px;
+                text-align:center;
+            }
+
+           
+
+        </style>
+        <link  href="jquery.fancybox.css" rel="stylesheet">
+        <link rel="stylesheet" href="fansy.css">
+
+        
+    </head>
+    <body>
+        <nav>
+            <a href="../ball/ball.html">Ball</a>
+            <a href="#">Gallery</a>
+            <a href="../draw/draw.html">Draw</a>
+            <a href="../random color/random_color.html">Random color</a>
+            
+          </nav>  
+     
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="jquery.fancybox.js"></script>
+
+        <a data-fancybox="gallery" href="img/big/1 копия.jpg">
+            <img src="img/small/1 копия.jpg">
+        </a>
+        
+        <a data-fancybox="gallery" href="img/big/3 копия.jpg"">
+            <img src="img/small/3 копия.jpg">
+        </a>
+
+        <a data-fancybox="gallery" href="img/big/4 копия.jpg">
+            <img src="img/small/4 копия.jpg">
+        </a>
+
+        <br />
+        <br />
+
+        <a data-fancybox="gallery2" href="img/big/2 копия.jpg"">
+            <img src="img/small/2 копия.jpg">
+        </a>
+
+        <a data-fancybox="gallery2" href="img/big/5 копия.jpg">
+            <img src="img/small/5 копия.jpg">
+        </a>
+
+        <br />
+        <br />
+        <div>Click for Radio</div>
+        <a data-fancybox href="https://youtu.be/5qap5aO4i9A">
+            
+            <img src="https://youknow.by/resource/images/2020/02/radio1.jpeg">
+            
+        </a>
+
+        <br />
+
+        <script>
+            const config = { //чтобы картинки пролистывались с самого начала
+                loop: true,
+            };
+
+
+
+            $('[data-fancybox="gallery"]').fancybox(config); //чтобы картинки пролистывались с самого начала для первых 3
+
+
+            //https://web.archive.org/web/20210325170940/https://fancyapps.com/fancybox/3/docs/#video 
+            //https://web.archive.org/web/20210304013040/https://github.com/fancyapps/fancyBox
+            
+        </script>
+
+        
+
+    </body>
+</html>

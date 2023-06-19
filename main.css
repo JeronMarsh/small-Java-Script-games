@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    margin: 40px 0 40px;
+    font-size: 38px;
+    color:#cdd0d6;
+    text-shadow: 2px 2px 4px #000;
+    font-family: serif;
+
+}
+
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #535d67;
+    border-radius: 1px solid black;
+    box-shadow: 2px 2px 4px #000;
+
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display:inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+
+
+a:nth-child(1) {
+    width: 110px;
+}
+
+a:nth-child(2) {
+    width: 150px;
+}
+
+a:nth-child(3) {
+    width: 110px;
+}
+
+a:nth-child(4) {
+    width: 208px;
+}
+
+a:hover {
+    background-color: rgb(25, 206, 152);
+}

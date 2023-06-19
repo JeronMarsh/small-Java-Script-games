@@ -1,0 +1,69 @@
+<html>
+    <head>
+        
+      <!--  <script src="onclick.js"></script> -->
+        <style>
+            div {background:white; width:100px;}
+            span { border:1px solid red;}
+            div#press_div {background:white;width:100px;height:100px;border:1px solid black;}
+           
+		  
+		  .start {
+			font-size: 15px;
+			font-weight: bold;
+		  }
+
+        </style>
+
+      <link rel="stylesheet" href="color.css">
+    </head>
+
+<body>
+  <nav>
+    <a href="../ball/ball.html">Ball</a>
+    <a href="../gallery/fansybox.html">Gallery</a>
+    <a href="../draw/draw.html">Draw</a>
+    <a href="#">Random color</a>
+    
+  </nav> 
+
+	<div class="start">Введите текст</div>
+	<br />
+    <input id="some_text" type="text" value="">
+    <input id="button" type="button" value="Изменить цвет текста">
+    <div id="some_div"></div>
+  <script>
+    button.onclick = counter;
+   
+    var inner_text = document.querySelector("#some_text");
+    var inner_div = document.querySelector("#some_div");
+    
+    
+   
+      
+
+    function counter() {
+        
+        var new_div = document.createElement("div");
+        inner_div.append(new_div);
+        for (i=0; i<inner_text.value.length;i++) {
+            var new_span = document.createElement("span");
+            var a = Math.ceil(Math.random()*255);
+            var b = Math.ceil(Math.random()*255);
+            var c = Math.ceil(Math.random()*255);
+            new_span.style.color = 'RGB(' + a + ',' + b + ',' + c + ')';
+            new_span.innerHTML = inner_text.value[i];
+            new_div.append(new_span);
+            
+            
+            
+
+        }
+
+        
+    }
+   
+  </script>
+</body>
+
+</html>
